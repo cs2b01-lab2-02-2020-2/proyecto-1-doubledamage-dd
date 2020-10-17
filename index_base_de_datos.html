@@ -11,10 +11,10 @@
     <body>
 
         <form id="form">
-            <input type="text" id="nombre" name="nombre"/>
-            <input type="text" id="email" name="email"/>
-            <input type="number" id="telefono" name="telefono"/>
-            <input type="text" id="mensaje" name="mensaje"/>
+            <input type="text" id="dzname" name="dzname"/>
+            <input type="text" id="dzEmail" name="dzEmail"/>
+            <input type="number" id="dzOther_phone" name="dzOther_phone"/>
+            <input type="text" id="dzMessage" name="dzMessage"/>
             
             <input type="submit" value="Crear"/>
         </form>
@@ -31,10 +31,11 @@
                 fetch('/todos/create', {
                     method: 'POST',
                     body: JSON.stringify({
-                        'nombre': document.getElementById('nombre').value,
-                        'email': document.getElementById('email').value,
-                        'telefono': document.getElementById('telefono').value,
-                        'mensaje': document.getElementById('mensaje').value
+                        'dzname': document.getElementById('dzname').value,
+                        'dzEmail': document.getElementById('dzEmail').value,
+                        'dzOther_phone': document.getElementById('dzOther_phone').value,
+                        'dzOther_sex': document.getElementById('dzOther_sex').value,
+                        'dzMessage': document.getElementById('dzMessage').value
                     }),
                     headers: {
                         'Content-Type': 'application/json'
@@ -45,25 +46,31 @@
                 })
                 .then(function(jsonResponse) {
                     const liItem = document.createElement('LI');
-                    liItem.innerHTML = jsonResponse['nombre'];
+                    liItem.innerHTML = jsonResponse['dzname'];
                     document.getElementById('usuarios_ingresados').appendChild(liItem);
                     document.getElementById('error').className = 'hidden';
                 })
                 .then(function(jsonResponse) {
                     const liItem = document.createElement('LI');
-                    liItem.innerHTML = jsonResponse['email'];
+                    liItem.innerHTML = jsonResponse['dzEmail'];
                     document.getElementById('usuarios_ingresados').appendChild(liItem);
                     document.getElementById('error').className = 'hidden';
                 })
                 .then(function(jsonResponse) {
                     const liItem = document.createElement('LI');
-                    liItem.innerHTML = jsonResponse['telefono'];
+                    liItem.innerHTML = jsonResponse['dzOther_phone'];
                     document.getElementById('usuarios_ingresados').appendChild(liItem);
                     document.getElementById('error').className = 'hidden';
                 })
                 .then(function(jsonResponse) {
                     const liItem = document.createElement('LI');
-                    liItem.innerHTML = jsonResponse['mensaje'];
+                    liItem.innerHTML = jsonResponse['dzOther_sex'];
+                    document.getElementById('usuarios_ingresados').appendChild(liItem);
+                    document.getElementById('error').className = 'hidden';
+                })
+                .then(function(jsonResponse) {
+                    const liItem = document.createElement('LI');
+                    liItem.innerHTML = jsonResponse['dzMessage'];
                     document.getElementById('usuarios_ingresados').appendChild(liItem);
                     document.getElementById('error').className = 'hidden';
                 })
