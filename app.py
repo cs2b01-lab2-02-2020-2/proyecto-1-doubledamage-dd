@@ -22,29 +22,32 @@ migrate = Migrate(app, db)
 class Usuario(db.Model):
     __tablename__ = 'usuarios_nuevos'
     id = db.Column(db.Integer,  primary_key=True)
-    nombre = db.Column(db.String(), nullable=False)
-    email = db.Column(db.String(), nullable = False)
-    telefono = db.Column(db.Integer, nullable = False)
-    mensaje = db.Column(db.String(), nullable = False)
+    dzname = db.Column(db.String(), nullable=False)
+    dzEmail = db.Column(db.String(), nullable = False)
+    dzOther_phone = db.Column(db.Integer, nullable = False)
+    dzOther_sex = db.Column(db.String(), nullable = False)
+    dzMessage = db.Column(db.String(), nullable = False)
 
     def __repr__(self):
-        return f'<Usuario: {self.id}, {self.nombre}, {self.email}, {self.telefono}, {self.mensaje}>'
+        return f'<Usuario: {self.id}, {self.dzname}, {self.dzEmail}, {self.dzOther_phone}, {self.dzOther_sex}, {self.dzMessage}>'
 
 @app.route('/todos/create', methods=['POST'])
 def create_usuario():
     print("usuario_creado")
     try:
-        nombre = request.get_json()['nombre']
-        email = request.get_json()['email']
-        telefono = request.get_json()['telefono']
-        mensaje = request.get_json()['mensaje']
+        dzname = request.get_json()['dzname']
+        dzEmail = request.get_json()['dzEmail']
+        dzOther_phone = request.get_json()['dzOther_phone']
+        dzOther_sex = request.get_json()['dzOther_sex']
+        dzMessage = request.get_json()['dzMessage']
+        
 
-        usuario = Usuario(nombre = nombre, email = email, telefono = telefono, mensaje = mensaje)
+        usuario = Usuario(dzname = dzname, dzEmail = dzEmail, dzOther_phone = dzOther_phone, dzOther_sex= dzOther_sex, dzMessage = dzMessage)
         db.session.add(usuario)
         db.session.commit()
         return jsonify({
-            "nombre": usuario.nombre
-            "email" : usuario.email
+            "dzname": usuario.dzname
+            "dzEmail" : usuario.dzEmail
         })
     except:
         db.session.rollback()
@@ -54,8 +57,8 @@ def create_usuario():
 
 @app.route('/')
 def index():
-    usuario = Todo.query.all()
-    return render_template('index.html', data=todos)
+    usuario = Usuario.query.all()
+    return render_template('index.html', data=usuario)
 
 
 if __name__ == '__main__':
