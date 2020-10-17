@@ -1,0 +1,79 @@
+<html>
+    <head>
+        <title>Double Damage raaaa</title>
+        <style>
+            .hidden {
+                display: none
+            }
+
+        </style>
+    </head>
+    <body>
+
+        <form id="form">
+            <input type="text" id="nombre" name="nombre"/>
+            <input type="text" id="email" name="email"/>
+            <input type="number" id="telefono" name="telefono"/>
+            <input type="text" id="mensaje" name="mensaje"/>
+            
+            <input type="submit" value="Crear"/>
+        </form>
+        <div id="error" class="hidden">Ocurrió un error!</div>
+        <ul id="usuarios_ingresados">
+            {% for d in data %}
+            <li>{{d.description}}</li>
+            {% endfor %}
+        </ul>
+
+        <script>
+            document.getElementById('form').onsubmit = function(e) {
+                e.preventDefault();
+                fetch('/todos/create', {
+                    method: 'POST',
+                    body: JSON.stringify({
+                        'nombre': document.getElementById('nombre').value,
+                        'email': document.getElementById('email').value,
+                        'telefono': document.getElementById('telefono').value,
+                        'mensaje': document.getElementById('mensaje').value
+                    }),
+                    headers: {
+                        'Content-Type': 'application/json'
+                    }
+                })
+                .then(function(response){
+                    return response.json();
+                })
+                .then(function(jsonResponse) {
+                    const liItem = document.createElement('LI');
+                    liItem.innerHTML = jsonResponse['nombre'];
+                    document.getElementById('usuarios_ingresados').appendChild(liItem);
+                    document.getElementById('error').className = 'hidden';
+                })
+                .then(function(jsonResponse) {
+                    const liItem = document.createElement('LI');
+                    liItem.innerHTML = jsonResponse['email'];
+                    document.getElementById('usuarios_ingresados').appendChild(liItem);
+                    document.getElementById('error').className = 'hidden';
+                })
+                .then(function(jsonResponse) {
+                    const liItem = document.createElement('LI');
+                    liItem.innerHTML = jsonResponse['telefono'];
+                    document.getElementById('usuarios_ingresados').appendChild(liItem);
+                    document.getElementById('error').className = 'hidden';
+                })
+                .then(function(jsonResponse) {
+                    const liItem = document.createElement('LI');
+                    liItem.innerHTML = jsonResponse['mensaje'];
+                    document.getElementById('usuarios_ingresados').appendChild(liItem);
+                    document.getElementById('error').className = 'hidden';
+                })
+                .catch(function(error) {
+                    document.getElementById('error').className = '';
+                });
+            }
+        </script>
+
+
+    </body>
+
+</html>
