@@ -14,8 +14,8 @@
             <input type="text" id="dzname" name="dzname"/>
             <input type="text" id="dzEmail" name="dzEmail"/>
             <input type="number" id="dzOther_phone" name="dzOther_phone"/>
+            <input type="text" id="dzOther_sex" name="dzOther_sex"/>
             <input type="text" id="dzMessage" name="dzMessage"/>
-            
             <input type="submit" value="Crear"/>
         </form>
         <div id="error" class="hidden">Ocurrió un error!</div>
@@ -28,7 +28,7 @@
         <script>
             document.getElementById('form').onsubmit = function(e) {
                 e.preventDefault();
-                fetch('/todos/create', {
+                fetch('/usuarios_nuevos/create', {
                     method: 'POST',
                     body: JSON.stringify({
                         'dzname': document.getElementById('dzname').value,
@@ -45,34 +45,22 @@
                     return response.json();
                 })
                 .then(function(jsonResponse) {
+                    document.getElementById('error').className = 'hidden';
                     const liItem = document.createElement('LI');
                     liItem.innerHTML = jsonResponse['dzname'];
                     document.getElementById('usuarios_ingresados').appendChild(liItem);
-                    document.getElementById('error').className = 'hidden';
-                })
-                .then(function(jsonResponse) {
-                    const liItem = document.createElement('LI');
+                    const liItem2 = document.createElement('LI');
                     liItem.innerHTML = jsonResponse['dzEmail'];
-                    document.getElementById('usuarios_ingresados').appendChild(liItem);
-                    document.getElementById('error').className = 'hidden';
-                })
-                .then(function(jsonResponse) {
-                    const liItem = document.createElement('LI');
+                    document.getElementById('usuarios_ingresados').appendChild(liItem2);
+                    const liItem3 = document.createElement('LI');
                     liItem.innerHTML = jsonResponse['dzOther_phone'];
-                    document.getElementById('usuarios_ingresados').appendChild(liItem);
-                    document.getElementById('error').className = 'hidden';
-                })
-                .then(function(jsonResponse) {
-                    const liItem = document.createElement('LI');
+                    document.getElementById('usuarios_ingresados').appendChild(liItem3);
+                    const liItem4 = document.createElement('LI');
                     liItem.innerHTML = jsonResponse['dzOther_sex'];
-                    document.getElementById('usuarios_ingresados').appendChild(liItem);
-                    document.getElementById('error').className = 'hidden';
-                })
-                .then(function(jsonResponse) {
-                    const liItem = document.createElement('LI');
+                    document.getElementById('usuarios_ingresados').appendChild(liItem4);
+                    const liItem5 = document.createElement('LI');
                     liItem.innerHTML = jsonResponse['dzMessage'];
-                    document.getElementById('usuarios_ingresados').appendChild(liItem);
-                    document.getElementById('error').className = 'hidden';
+                    document.getElementById('usuarios_ingresados').appendChild(liItem5);
                 })
                 .catch(function(error) {
                     document.getElementById('error').className = '';
