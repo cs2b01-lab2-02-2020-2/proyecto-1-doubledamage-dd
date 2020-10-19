@@ -21,7 +21,7 @@
         <div id="error" class="hidden">Ocurrió un error!</div>
         <ul id="usuarios_ingresados">
             {% for d in data %}
-            <li>{{d.description}}</li>
+            <li>{{d.dzname}}</li>
             {% endfor %}
         </ul>
 
@@ -49,17 +49,17 @@
                     const liItem = document.createElement('LI');
                     liItem.innerHTML = jsonResponse['dzname'];
                     document.getElementById('usuarios_ingresados').appendChild(liItem);
-                         document.createElement('LI');
-                    liItem.innerHTML = jsonResponse['dzEmail'];
+                    const liItem2 = document.createElement('LI');
+                    liItem2.innerHTML = jsonResponse['dzEmail'];
                     document.getElementById('usuarios_ingresados').appendChild(liItem2);
                     const liItem3 = document.createElement('LI');
-                    liItem.innerHTML = jsonResponse['dzOther_phone'];
+                    liItem3.innerHTML = jsonResponse['dzOther_phone'];
                     document.getElementById('usuarios_ingresados').appendChild(liItem3);
                     const liItem4 = document.createElement('LI');
-                    liItem.innerHTML = jsonResponse['dzOther_sex'];
+                    liItem4.innerHTML = jsonResponse['dzOther_sex'];
                     document.getElementById('usuarios_ingresados').appendChild(liItem4);
                     const liItem5 = document.createElement('LI');
-                    liItem.innerHTML = jsonResponse['dzMessage'];
+                    liItem5.innerHTML = jsonResponse['dzMessage'];
                     document.getElementById('usuarios_ingresados').appendChild(liItem5);
                     document.getElementById('error').className = 'hidden';
                 })
