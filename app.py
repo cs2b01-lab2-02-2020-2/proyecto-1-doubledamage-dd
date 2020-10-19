@@ -45,7 +45,7 @@ def create_usuario():
         db.session.add(usuario)
         db.session.commit()
         return jsonify({
-            "dzname": usuario['dzname'],
+            "dzname": usuario.dzname
             })
     except:
         db.session.rollback()

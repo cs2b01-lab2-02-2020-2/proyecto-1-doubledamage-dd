@@ -27,7 +27,7 @@
 
         <script>
             document.getElementById('form').onsubmit = function(e) {
-                e.preventDefault();
+                e.preventDefault(); // previene que la pagina se refresque
                 fetch('/usuarios_nuevos/create', {
                     method: 'POST',
                     body: JSON.stringify({
@@ -49,7 +49,7 @@
                     const liItem = document.createElement('LI');
                     liItem.innerHTML = jsonResponse['dzname'];
                     document.getElementById('usuarios_ingresados').appendChild(liItem);
-                    const liItem2 = document.createElement('LI');
+                         document.createElement('LI');
                     liItem.innerHTML = jsonResponse['dzEmail'];
                     document.getElementById('usuarios_ingresados').appendChild(liItem2);
                     const liItem3 = document.createElement('LI');
@@ -61,6 +61,7 @@
                     const liItem5 = document.createElement('LI');
                     liItem.innerHTML = jsonResponse['dzMessage'];
                     document.getElementById('usuarios_ingresados').appendChild(liItem5);
+                    document.getElementById('error').className = 'hidden';
                 })
                 .catch(function(error) {
                     document.getElementById('error').className = '';
