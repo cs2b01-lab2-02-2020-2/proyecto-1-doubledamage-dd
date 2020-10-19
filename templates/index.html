@@ -1,75 +1,122 @@
-<html>
+<!DOCTYPE html>
+<html lang="en">
     <head>
-        <title>Double Damage raaaa</title>
+        
         <style>
             .hidden {
                 display: none
             }
 
         </style>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>Double Damage raaaa</title>
+        <link rel="stylesheet" href="main.css" type="text/css">
+        <!-- GOOGLE FONTs -->
+        <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+        <!-- FONT AWESOME -->
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+        <!-- ANIMATE CSS -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
     </head>
     <body>
+        <div class="content">
 
-        <form id="form">
-            <input type="text" id="dzname" name="dzname"/>
-            <input type="text" id="dzEmail" name="dzEmail"/>
-            <input type="number" id="dzOther_phone" name="dzOther_phone"/>
-            <input type="text" id="dzOther_sex" name="dzOther_sex"/>
-            <input type="text" id="dzMessage" name="dzMessage"/>
-            <input type="submit" value="Crear"/>
-        </form>
-        <div id="error" class="hidden">Ocurrió un error!</div>
-        <ul id="usuarios_ingresados">
-            {% for d in data %}
-            <li>{{d.description}}</li>
-            {% endfor %}
-        </ul>
+            <h1 class="logo">Contact <span>Us</span></h1>
+            <div class="contact-wrapper animated bounceInUp"></div>
+            <div class="contact-form">
+                <h3>Contact us</h3>
+            <form id="form">
+                <p>
+                    <label>FullName</label>
+                    <input type="text" id="dzname" name="dzname"/>
+                </p>
+                <p>
+                    <label>Email Adress</label>
+                    <input type="text" id="dzEmail" name="dzEmail"/>
+                </p>
+                <p>
+                    <label>Phone Number</label>
+                <input type="number" id="dzOther_phone" name="dzOther_phone"/>
+                </p>
+                <p>
+                    <label>Sex</label>
+                <input type="text" id="dzOther_sex" name="dzOther_sex"/>
+                </p>
+                <p class="block">
+                    <label>Message</label> 
+                     <textarea input type="text" id="dzMessage" name="dzMessage" rows="3"></textarea>
+                 </p>
+                <div class="col-md-12">
+                    <button name="submit" type="submit" value="Submit" class="btn btn-primary btn-block"> <span>Submit</span> </button>
+                </div>
+            </form>
+            <div id="error" class="hidden">Ocurrió un error!</div>
+            <ul id="usuarios_ingresados">
+                {% for d in data %}
+                <li>{{d.dzname}}</li>
+                {% endfor %}
+                {% for d in data %}
+                <li>{{d.dzOther_phone}}</li>
+                {% endfor %}
 
-        <script>
-            document.getElementById('form').onsubmit = function(e) {
-                e.preventDefault(); // previene que la pagina se refresque
-                fetch('/usuarios_nuevos/create', {
-                    method: 'POST',
-                    body: JSON.stringify({
-                        'dzname': document.getElementById('dzname').value,
-                        'dzEmail': document.getElementById('dzEmail').value,
-                        'dzOther_phone': document.getElementById('dzOther_phone').value,
-                        'dzOther_sex': document.getElementById('dzOther_sex').value,
-                        'dzMessage': document.getElementById('dzMessage').value
-                    }),
-                    headers: {
-                        'Content-Type': 'application/json'
-                    }
-                })
-                .then(function(response){
-                    return response.json();
-                })
-                .then(function(jsonResponse) {
-                    document.getElementById('error').className = 'hidden';
-                    const liItem = document.createElement('LI');
-                    liItem.innerHTML = jsonResponse['dzname'];
-                    document.getElementById('usuarios_ingresados').appendChild(liItem);
-                         document.createElement('LI');
-                    liItem.innerHTML = jsonResponse['dzEmail'];
-                    document.getElementById('usuarios_ingresados').appendChild(liItem2);
-                    const liItem3 = document.createElement('LI');
-                    liItem.innerHTML = jsonResponse['dzOther_phone'];
-                    document.getElementById('usuarios_ingresados').appendChild(liItem3);
-                    const liItem4 = document.createElement('LI');
-                    liItem.innerHTML = jsonResponse['dzOther_sex'];
-                    document.getElementById('usuarios_ingresados').appendChild(liItem4);
-                    const liItem5 = document.createElement('LI');
-                    liItem.innerHTML = jsonResponse['dzMessage'];
-                    document.getElementById('usuarios_ingresados').appendChild(liItem5);
-                    document.getElementById('error').className = 'hidden';
-                })
-                .catch(function(error) {
-                    document.getElementById('error').className = '';
-                });
-            }
-        </script>
+            </ul>
 
-
+            <script>
+                document.getElementById('form').onsubmit = function(e) {
+                    e.preventDefault(); // previene que la pagina se refresque
+                    fetch('/usuarios_nuevos/create', {
+                        method: 'POST',
+                        body: JSON.stringify({
+                            'dzname': document.getElementById('dzname').value,
+                            'dzEmail': document.getElementById('dzEmail').value,
+                            'dzOther_phone': document.getElementById('dzOther_phone').value,
+                            'dzOther_sex': document.getElementById('dzOther_sex').value,
+                            'dzMessage': document.getElementById('dzMessage').value
+                        }),
+                        headers: {
+                            'Content-Type': 'application/json'
+                        }
+                    })
+                    .then(function(response){
+                        return response.json();
+                    })
+                    .then(function(jsonResponse) {
+                        document.getElementById('error').className = 'hidden';
+                        const liItem = document.createElement('LI');
+                        liItem.innerHTML = jsonResponse['dzname'];
+                        document.getElementById('usuarios_ingresados').appendChild(liItem);
+                            document.createElement('LI');
+                        liItem.innerHTML = jsonResponse['dzEmail'];
+                        document.getElementById('usuarios_ingresados').appendChild(liItem2);
+                        const liItem3 = document.createElement('LI');
+                        liItem.innerHTML = jsonResponse['dzOther_phone'];
+                        document.getElementById('usuarios_ingresados').appendChild(liItem3);
+                        const liItem4 = document.createElement('LI');
+                        liItem.innerHTML = jsonResponse['dzOther_sex'];
+                        document.getElementById('usuarios_ingresados').appendChild(liItem4);
+                        const liItem5 = document.createElement('LI');
+                        liItem.innerHTML = jsonResponse['dzMessage'];
+                        document.getElementById('usuarios_ingresados').appendChild(liItem5);
+                        document.getElementById('error').className = 'hidden';
+                    })
+                    .catch(function(error) {
+                        document.getElementById('error').className = '';
+                    });
+                }
+            </script>
+            <div class="contact-info">
+                <h4>More Info</h4>
+                <ul>
+                    <li><i class="fas fa-map-marker-alt"></i> Jr. Medrano Silva 165, Barranco 15063</li>
+                    <li><i class="fas fa-phone"></i> (+51) 981938172</li>
+                    <li><i class="fas fa-envelope-open-text"></i> jean.angeles@utec.edu.pe</li>
+                </ul>
+                <p> Somos una organización que forma deportistas en judo con disciplina y eficiencia</p>
+                <p>JudoClub</p>
+            <button type="button" class="scrollTop"><i class="fa fa-chevron-up"></i></button>
+        </div>
     </body>
 
 </html>
