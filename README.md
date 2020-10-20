@@ -1,18 +1,26 @@
 # Proyecto DBP 2020-2 #
 #### Integrantes:
-1.Marcelo Juan Surco Salas.
-2.Harold Alexis Canto Vidal
-3.Jean Pier Ángeles.
-4.Alberto Domenic Rincon Espinoza.
+1. Marcelo Juan Surco Salas.
+2. Harold Alexis Canto Vidal
+3. Jean Pier Ángeles.
+4. Alberto Domenic Rincon Espinoza.
 
-[ TOC ]
+## Contents
++ [ Descripción del proyecto ](#Desc)
++ [ Objetivos principales / Misión / Visión. ](#opmv)
++ [ Back-end /  Front-end / Base de datos ](#bfb)
++ [ Host ](#host)
++ [ Forma de autenticación ](#aut)
++ [ Manejo de errores ](#me)
++ [ Request y response ](#rr)
++ [ Ejecución del sistema ](#ejec)
 
+<a name="Desc"></a>
 ## Descripción del proyecto:
 Nuestro proyecto cuenta con un modulo de registro y login a través de back y front end.
 
-
+<a name="opmv"></a>
 ## Objetivos principales / Misión / Visión :
-
 ### Objetivos:
 El objetivo de este proyecto es crear un sistema que nos permitar hacer registros y logeos basandonos en el modelo cliente servidor. 
 ### Misión:
@@ -20,6 +28,7 @@ Relizar todas las implemetaciones de manera correcta y eficaz.
 ### Visión:
 Tener como resultado final un proyecto muy bueno, capaz de funcionar de manera eficiente.
 
+<a name="bfb"></a>
 ## Back-end /  Front-end / Base de datos:
 ### Back-end
 Utilizamos flask como framework, este nos permite realizar metodos importantes en la app.
@@ -27,12 +36,14 @@ Utilizamos flask como framework, este nos permite realizar metodos importantes e
 En el Front-end hemos utilizado HTML y CSS.
 ### Base de datos
 Hemos utilizado una base de datos relacional, en este caso postgresql, además de utilizar SQLAlchemy como ORM para poder convertir las tablas Clases python y así mismo crear modelos.
+<a name="host"></a>
 ## Host
 En este caso hemos  utilizado el local host como base de datos, cliente y servidor.
+<a name="aut"></a>
 ## Forma de autenticación:
 
 
-
+<a name="me"></a>
 ## Manejo de errores
 El manejo de errores se hace a través de un app.errorhandler como se muestra. Además, se maneja solo los posibles errores que puede haber en la app.
 ``` python 
@@ -48,6 +59,7 @@ def forbidden(err):
 def not_implemented(err):
     return render_template("not_implemented.html"),501
 ```
+<a name="rr"></a>
 ## Request y response
 ### Response
 El response de la data se hace a través de flask, siendo especificos, de la función render_template, donde le enviamos la data al front-end
@@ -102,6 +114,7 @@ El request se hace de manera asincrona a través de fetch.
                     });
                 }
 ```
+<a name="ejec"></a>
 ## Ejecución del sistema
 La ejecución del sistema se hace simplemente corriendo el app.py, ya que tenemos definido una condicional para arrancar el sistema.
 ``` python
