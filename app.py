@@ -28,6 +28,7 @@ class Usuario(db.Model):
     dzOther_phone = db.Column(db.Integer, nullable = False)
     dzOther_sex = db.Column(db.String(), nullable = False)
     dzMessage = db.Column(db.String(), nullable = False)
+    dzLogueado = db.Column(db.Boolean, nullable = False, default = False)
 
     def __repr__(self):
         return f'<Usuario: {self.id}, {self.dzname}, {self.dzEmail}, {self.dzOther_phone}, {self.dzOther_sex}, {self.dzMessage}>'
@@ -61,6 +62,30 @@ def create_usuario():
     finally:
         db.session.close()
 
+@app.route('/next_page_u', methods = ['GET'])
+def next_page():
+    return render_template('hola.html')
+
+@app.route('/usuario_ingresado/ingreso', methods = ['POST'])
+def logeo_usuario():
+    try:
+        usuario = request.get_json()['usuario']
+        telefono = request.get_json()['telefono']
+        nombre = Usuario.query.filter_by(dzname = usuario).first()
+        clave = Usuario.query.filter_by(dzOther_phone = telefono).first()
+        logueado = request.get_json()['logueado']
+        if not nombre or not clave:
+            print("Porfavor revise si ingresó correctamente el usuario o la contraseña")
+        else:
+            nombre.dzLogueado = logueado
+            db.session.commit()
+            print('Logueado correctamente')
+            return redirect(url_for('next_page'))
+    except Exception as e:
+        db.session.rollback()
+    finally:
+        db.session.close()
+    return "Logueado correctamente"
 
 @app.route('/')
 def index():
