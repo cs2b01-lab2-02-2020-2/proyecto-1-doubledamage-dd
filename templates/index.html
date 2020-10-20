@@ -93,7 +93,7 @@
                         liItem5.innerHTML = jsonResponse['dzMessage'];
                         document.getElementById('usuarios_ingresados').appendChild(liItem5);
                         document.getElementById('error').className = 'hidden';
-                    })
+                        })
                     .catch(function(error) {
                         document.getElementById('error').className = '';
                     });
