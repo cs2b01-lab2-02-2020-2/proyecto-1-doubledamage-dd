@@ -116,7 +116,7 @@ El request se hace de manera asincrona a través de fetch.
 ```
 <a name="ejec"></a>
 ## Ejecución del sistema
-La ejecución del sistema se hace simplemente corriendo el app.py, ya que tenemos definido una condicional para arrancar el sistema.
+La ejecución del sistema se hace dentro del app.py(solo se tiene que correr el archivo.py).
 ``` python
 if __name__ == '__main__':
     app.run(debug=True, port=5010)
