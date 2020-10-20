@@ -15,7 +15,11 @@ app.config['SQLALCHEMY_DATABASE_URI'] = 'postgresql://postgres:jeanpierrenzo1234
 app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
 
 db = SQLAlchemy(app)
-
+migrate=Migrate(app,db)
+#Ejecutar el flask db init ->Crea la carpeta migrations
+#Borrar la base de datos dropdb y luego crearla de nuevo
+#Ejecutar el flask db migrate
+#Se creará un archivo
 class Usuario(db.Model):
     __tablename__ = 'usuarios_nuevos'
     id = db.Column(db.Integer,  primary_key=True)
@@ -28,7 +32,7 @@ class Usuario(db.Model):
     def __repr__(self):
         return f'<Usuario: {self.id}, {self.dzname}, {self.dzEmail}, {self.dzOther_phone}, {self.dzOther_sex}, {self.dzMessage}>'
 
-db.create_all()
+#db.create_all()
 
 @app.route('/usuarios_nuevos/create', methods=['POST'])
 def create_usuario():
