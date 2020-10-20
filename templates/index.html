@@ -1,29 +1,22 @@
 <!DOCTYPE html>
-<html lang="en">
-    <head>
-        
-        <style>
-            .hidden {
-                display: none
-            }
-
-        </style>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta http-equiv="X-UA-Compatible" content="ie=edge">
-        <title>Double Damage raaaa</title>
-        <link rel="stylesheet" href="main.css" type="text/css">
-        <!-- GOOGLE FONTs -->
-        <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
-        <!-- FONT AWESOME -->
-        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
-        <!-- ANIMATE CSS -->
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
-    </head>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Website with a contact Form 01</title>
+    <link rel="stylesheet" href="../static/css/estilos.css">
+    <!-- GOOGLE FONTs -->
+    <link href="https://fonts.googleapis.com/css?family=Quicksand" rel="stylesheet">
+    <!-- FONT AWESOME -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    <!-- ANIMATE CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
+</head>
     <body>
         <div class="content">
 
-            <h1 class="logo">Contact <span>Us</span></h1>
+            <h1 class="logo">Judo<span>Club</span></h1>
             <div class="contact-wrapper animated bounceInUp"></div>
             <div class="contact-form">
                 <h3>Contact us</h3>
@@ -87,20 +80,20 @@
                         const liItem = document.createElement('LI');
                         liItem.innerHTML = jsonResponse['dzname'];
                         document.getElementById('usuarios_ingresados').appendChild(liItem);
-                            document.createElement('LI');
-                        liItem.innerHTML = jsonResponse['dzEmail'];
+                        const liItem2 = document.createElement('LI');
+                        liItem2.innerHTML = jsonResponse['dzEmail'];
                         document.getElementById('usuarios_ingresados').appendChild(liItem2);
                         const liItem3 = document.createElement('LI');
-                        liItem.innerHTML = jsonResponse['dzOther_phone'];
+                        liItem3.innerHTML = jsonResponse['dzOther_phone'];
                         document.getElementById('usuarios_ingresados').appendChild(liItem3);
                         const liItem4 = document.createElement('LI');
-                        liItem.innerHTML = jsonResponse['dzOther_sex'];
+                        liItem4.innerHTML = jsonResponse['dzOther_sex'];
                         document.getElementById('usuarios_ingresados').appendChild(liItem4);
                         const liItem5 = document.createElement('LI');
-                        liItem.innerHTML = jsonResponse['dzMessage'];
+                        liItem5.innerHTML = jsonResponse['dzMessage'];
                         document.getElementById('usuarios_ingresados').appendChild(liItem5);
                         document.getElementById('error').className = 'hidden';
-                    })
+                        })
                     .catch(function(error) {
                         document.getElementById('error').className = '';
                     });

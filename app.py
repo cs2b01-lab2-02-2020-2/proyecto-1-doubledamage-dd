@@ -24,7 +24,7 @@ class Usuario(db.Model):
     __tablename__ = 'usuarios_nuevos'
     id = db.Column(db.Integer,  primary_key=True)
     dzname = db.Column(db.String(), nullable=False)
-    dzEmail = db.Column(db.String(), nullable = False)
+    dzEmail = db.Column(db.String(), nullable=False)
     dzOther_phone = db.Column(db.Integer, nullable = False)
     dzOther_sex = db.Column(db.String(), nullable = False)
     dzMessage = db.Column(db.String(), nullable = False)
