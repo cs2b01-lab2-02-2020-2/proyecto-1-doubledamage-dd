@@ -61,6 +61,9 @@ def create_usuario():
         return "hubo un problema"
     finally:
         db.session.close()
+        
+        
+#-----------------------------------------------------------------------------------------------------
 
 @app.route('/next_page_u', methods = ['GET'])
 def next_page():
@@ -86,6 +89,8 @@ def logeo_usuario():
     finally:
         db.session.close()
     return "Logueado correctamente"
+
+#------------------------------------------------------------------------------------------------------------------------
 
 @app.route('/')
 def index():
