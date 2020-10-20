@@ -1,9 +1,11 @@
 # Proyecto DBP 2020-2 #
-### Integrantes:
--Marcelo Juan Surco Salas.
--Harold Alexis Canto Vidal
--Jean Pier Ángeles.
--Alberto Domenic Rincon Espinoza.
+#### Integrantes:
+1. Marcelo Juan Surco Salas.
+2. Harold Alexis Canto Vidal
+3. Jean Pier Ángeles.
+4. Alberto Domenic Rincon Espinoza.
+         
+----
 
 [TOC]
 
