@@ -1,9 +1,9 @@
 #Proyecto DBP 2020-2#
 ###Integrantes:
--Marcelo Juan Surco Salas
+-Marcelo Juan Surco Salas.
 -Harold Alexis Canto Vidal
--Jean Pier Ángeles
--Alberto Domenic Rincon Espinoza
+-Jean Pier Ángeles.
+-Alberto Domenic Rincon Espinoza.
 
 [TOC]
 
