@@ -144,8 +144,8 @@ La ejecución del sistema se hace dentro del app.py(solo se tiene que correr el 
 if __name__ == '__main__':
     app.run(debug=True, port=5010)
 ```
-## Flask DB Migrate
-Se utilizó el flask migration para optimizar el manejo de la base de datos y para el manejo de versiones de la app. 
+## Flask DB Migration
+Se utilizó el flask db migration para optimizar el manejo de la base de datos y las versiones de la app. 
 ``` python
 from flask_sqlalchemy import SQLAlchemy
 from flask_migrate import Migrate
