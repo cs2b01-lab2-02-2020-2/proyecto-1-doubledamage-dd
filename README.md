@@ -32,14 +32,13 @@ Tener como resultado final un proyecto muy bueno, capaz de funcionar de manera e
 ## Back-end /  Front-end / Base de datos:
 ### Back-end
 Utilizamos flask como framework, este nos permite realizar metodos importantes en la app, además de utilizar SQLAlchemy como ORM para poder convertir las tablas Clases python y así mismo crear modelos.
+## Host
+Flask-SQLAlchemy
 ### Front-end
 En el Front-end hemos utilizado HTML, CSS, Fetch, JavaScript.
 ### Base de datos
 Hemos utilizado una base de datos relacional, en este caso postgresql.
 <a name="host"></a>
-
-## API
--SQLAlchemy
 ## Host
 En este caso hemos  utilizado el local host como base de datos, cliente y servidor.
 <a name="aut"></a>
