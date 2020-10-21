@@ -37,6 +37,9 @@ En el Front-end hemos utilizado HTML, CSS, Fetch, JavaScript.
 ### Base de datos
 Hemos utilizado una base de datos relacional, en este caso postgresql.
 <a name="host"></a>
+
+## API
+-SQLAlchemy
 ## Host
 En este caso hemos  utilizado el local host como base de datos, cliente y servidor.
 <a name="aut"></a>
