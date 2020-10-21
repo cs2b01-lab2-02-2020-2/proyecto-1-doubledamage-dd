@@ -144,8 +144,8 @@ La ejecución del sistema se hace dentro del app.py(solo se tiene que correr el 
 if __name__ == '__main__':
     app.run(debug=True, port=5010)
 ```
-## Flask DB Migration
-Se utilizó el flask migration para optimizar el manejo de la base de datos
+## Flask DB Migrate
+Se utilizó el flask migration para optimizar el manejo de la base de datos y para el manejo de versiones de la app. 
 ``` python
 from flask_sqlalchemy import SQLAlchemy
 from flask_migrate import Migrate
@@ -153,7 +153,22 @@ from flask_migrate import Migrate
 db = SQLAlchemy(app)
 migrate=Migrate(app,db)
 ```
+``` js
+def upgrade():
+    op.create_table('usuarios_nuevos',
+    sa.Column('id', sa.Integer(), nullable=False),
+    sa.Column('dzname', sa.String(), nullable=False),
+    sa.Column('dzEmail', sa.String(), nullable=False),
+    sa.Column('dzOther_phone', sa.Integer(), nullable=False),
+    sa.Column('dzOther_sex', sa.String(), nullable=False),
+    sa.Column('dzMessage', sa.String(), nullable=False),
+    sa.PrimaryKeyConstraint('id')
+    )
 
+
+def downgrade():
+    op.drop_table('usuarios_nuevos')
+``` 
 
 
 
