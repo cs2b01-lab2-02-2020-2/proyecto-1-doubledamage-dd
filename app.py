@@ -61,8 +61,11 @@ def create_usuario():
         return "hubo un problema"
     finally:
         db.session.close()
+        
 
-
+@app.route('/next_page_u', methods = ['GET'])
+def next_page():
+    return render_template('hola.html')
 
 @app.route('/usuario_ingresado/ingreso', methods = ['POST'])
 def logeo_usuario():
@@ -74,7 +77,6 @@ def logeo_usuario():
         logueado = request.get_json()['logueado']
         if not nombre or not clave:
             print("Porfavor revise si ingresó correctamente el usuario o la contraseña")
-            return redirect(url_for('index'))
         else:
             nombre.dzLogueado = logueado
             db.session.commit()
