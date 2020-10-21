@@ -17,7 +17,7 @@
 
 <a name="Desc"></a>
 ## Descripción del proyecto:
-Nuestro proyecto cuenta con un modulo de registro y login a través de back y front end, el cual permitirá la inscripción a un taller de Judo de forma virtual, para tener un manejo más organizado de los datos dentro de una base de datos en postgres.
+Nuestro proyecto cuenta con un modulo de registro y login a través de back y front end.
 
 <a name="opmv"></a>
 ## Objetivos principales / Misión / Visión :
@@ -31,11 +31,11 @@ Tener como resultado final un proyecto muy bueno, capaz de funcionar de manera e
 <a name="bfb"></a>
 ## Back-end /  Front-end / Base de datos:
 ### Back-end
-Utilizamos flask como framework, este nos permite realizar metodos importantes en la app.
+Utilizamos flask como framework, este nos permite realizar metodos importantes en la app, además de utilizar SQLAlchemy como ORM para poder convertir las tablas Clases python y así mismo crear modelos.
 ### Front-end
-En el Front-end hemos utilizado HTML y CSS.
+En el Front-end hemos utilizado HTML, CSS, Fetch, JavaScript.
 ### Base de datos
-Hemos utilizado una base de datos relacional, en este caso postgresql, además de utilizar SQLAlchemy como ORM para poder convertir las tablas Clases python y así mismo crear modelos.
+Hemos utilizado una base de datos relacional, en este caso postgresql.
 <a name="host"></a>
 ## Host
 En este caso hemos  utilizado el local host como base de datos, cliente y servidor.
