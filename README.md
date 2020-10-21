@@ -32,41 +32,19 @@ Tener como resultado final un proyecto muy bueno, capaz de funcionar de manera e
 ## Back-end /  Front-end / Base de datos:
 ### Back-end
 Utilizamos flask como framework, este nos permite realizar metodos importantes en la app, además de utilizar SQLAlchemy como ORM para poder convertir las tablas Clases python y así mismo crear modelos.
-## Host
-Flask-SQLAlchemy
 ### Front-end
 En el Front-end hemos utilizado HTML, CSS, Fetch, JavaScript.
 ### Base de datos
 Hemos utilizado una base de datos relacional, en este caso postgresql.
 <a name="host"></a>
+
+## API
+-SQLAlchemy
 ## Host
 En este caso hemos  utilizado el local host como base de datos, cliente y servidor.
 <a name="aut"></a>
 ## Forma de autenticación:
-``` python
-@app.route('/usuario_ingresado/ingreso', methods = ['POST'])
-def logeo_usuario():
-    try:
-        usuario = request.get_json()['usuario']
-        telefono = request.get_json()['telefono']
-        nombre = Usuario.query.filter_by(dzname = usuario).first()
-        clave = Usuario.query.filter_by(dzOther_phone = telefono).first()
-        logueado = request.get_json()['logueado']
-        if not nombre or not clave:
-            print("Porfavor revise si ingresó correctamente el usuario o la contraseña")
-            return redirect(url_for('index'))
-        else:
-            nombre.dzLogueado = logueado
-            db.session.commit()
-            print('Logueado correctamente')
-            return redirect(url_for('next_page'))
-    except Exception as e:
-        db.session.rollback()
-    finally:
-        db.session.close()
-    return "Logueado correctamente"
-
-```
+-Aun no implementado.
 
 <a name="me"></a>
 ## Manejo de errores
