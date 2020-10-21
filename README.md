@@ -1,4 +1,4 @@
-# Proyecto DBP 2020-2 #
+# JudoClub #
 #### Integrantes:
 1. Marcelo Juan Surco Salas.
 2. Harold Alexis Canto Vidal
