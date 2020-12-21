@@ -1,0 +1,203 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <TextView
+        android:layout_marginTop="30dp"
+        android:layout_marginBottom="20dp"
+        android:textColor="@color/black"
+        android:layout_marginStart="20dp"
+        android:text="MAESTROS DE JUDO CLUB "
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        >
+        <ImageView
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:src="@drawable/masutatsuoyama" />
+        <TextView
+            android:text="
+        * Masutatsu Ōyama
+        * Dan:4"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_marginEnd="50dp"/>
+
+        <ImageView
+            android:layout_width="100sp"
+            android:layout_height="100sp"
+            android:src="@drawable/teddyrynner"/>
+        <TextView
+            android:text="
+        * Teddy Rynner
+        * Dan:6"
+            android:layout_width="70sp"
+            android:layout_height="70sp"/>
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        >
+        <TextView
+            android:text="  "
+            android:layout_width="30dp"
+            android:layout_height="30dp"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        >
+        <ImageView
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:src="@drawable/yasuhiroyamashita" />
+        <TextView
+            android:text="
+        * Yasuhiro Yamashita
+        * Dan:4"
+            android:layout_width="70sp"
+            android:layout_height="70sp"
+            android:layout_marginEnd="50dp"/>
+
+        <ImageView
+            android:layout_width="100sp"
+            android:layout_height="100sp"
+            android:src="@drawable/hidehikoyoshida"/>
+        <TextView
+            android:text="
+        * Hidehiko Yoshida
+        * Dan:6"
+            android:layout_width="70sp"
+            android:layout_height="70sp"/>
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        >
+        <TextView
+            android:text="  "
+            android:layout_width="30dp"
+            android:layout_height="30dp"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        >
+        <ImageView
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:src="@drawable/toshihikokoba" />
+        <TextView
+            android:text="
+        * Toshihiko Koga
+        * Dan:5"
+            android:layout_width="65sp"
+            android:layout_height="70sp"
+            android:layout_marginEnd="50dp"/>
+
+        <ImageView
+            android:layout_width="100sp"
+            android:layout_height="100sp"
+            android:src="@drawable/iliasliadis"/>
+        <TextView
+            android:text="
+        *   Ilias Iliadis
+        * Dan:5"
+            android:layout_width="70sp"
+            android:layout_height="70sp"/>
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        >
+        <TextView
+            android:text="  "
+            android:layout_width="30dp"
+            android:layout_height="30dp"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        >
+        <ImageView
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:src="@drawable/tadahironomura" />
+        <TextView
+            android:text="
+        * Tadahiro Nomura
+        * Dan:5"
+            android:layout_width="70sp"
+            android:layout_height="70sp"
+            android:layout_marginEnd="50dp"/>
+
+        <ImageView
+            android:layout_width="100sp"
+            android:layout_height="100sp"
+            android:src="@drawable/koseiinoue"/>
+        <TextView
+            android:text="
+        * Kosei Inoue
+        * Dan:6"
+            android:layout_width="70sp"
+            android:layout_height="70sp"/>
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        >
+        <TextView
+            android:text="  "
+            android:layout_width="30dp"
+            android:layout_height="30dp"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        >
+        <ImageView
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:src="@drawable/daviddouillet" />
+        <TextView
+            android:text="
+        * David Douillet
+        * Dan:4"
+            android:layout_width="70sp"
+            android:layout_height="70sp"
+            android:layout_marginEnd="50dp"/>
+
+        <ImageView
+            android:layout_width="100sp"
+            android:layout_height="100sp"
+            android:src="@drawable/shoheiono"/>
+        <TextView
+            android:text="
+        * Shohei Ono
+        * Dan:6"
+            android:layout_width="50sp"
+            android:layout_height="70sp"/>
+
+    </LinearLayout>
+
+
+</LinearLayout>
+
+

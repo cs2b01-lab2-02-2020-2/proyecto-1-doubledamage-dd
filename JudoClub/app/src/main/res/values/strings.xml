@@ -1,0 +1,101 @@
+<resources>
+    <string name="app_name">JudoClub</string>
+    <string name="inscription">Inscription</string>
+    <string name="name">Name:</string>
+    <string name="morning">morning</string>
+    <string name="afternoon">afternoon</string>
+    <string name="night">night</string>
+    <string name="last_name">Last name:</string>
+    <string name="age">Age:</string>
+    <string name="shift">Shift:</string>
+    <string name="teacher">Teacher:</string>
+    <string name="sign_up">Sign Up</string>
+    <string name="input_name">enter your name</string>
+    <string name="input_last_name">enter your last name</string>
+    <string name="toast_error">It is mandatory to fill out all forms</string>
+    <string name="welcome_messaje">Welcome</string>
+    <string name="register_summary">Registration summary</string>
+    <string name="return_to_main">Return to main page</string>
+    <string name="inscription_main">Sign up</string>
+    <string name="teacher_main">Teachers</string>
+    <string name="hora">Hr:</string>
+    <string name="glosari_main">Glossary</string>
+    <string name="fundamental_tech_main">Fundamental Techniques</string>
+    <string name="go_kyo">Go-Kyo</string>
+    <string name="ne_waza">Ne-Waza</string>
+    <string name="meaning">Meaning:</string>
+    <string name="deashi_text">its the most difficult technique to learn because it requires a precise coordination of legs, arms and body. Its the first technique because following the japanese philosophy, who really wants to learn judo has to continuosly train never giving up. it is classified as ashi waza technique and the meaning of its name is advance foot sweping</string>
+    <string name="hiza_text">Ashi Waza technique and its name means knee wheel</string>
+    <string name="sasae_text">Ashi Waza technique and its name means propping lifting angle foot</string>
+    <string name="uki_text">Koshi Waza technique and its name means floating hip</string>
+    <string name="osoto_text">Ashi Waza technique and its name means major outside-outer reap</string>
+    <string name="koshi_text">Koshi Waza technique and its name means major hip</string>
+    <string name="ouchi_text">Ashi Waza technique and its name means major inside-inner reap</string>
+    <string name="ippon_text">Te Waza technique and its name means single back throw</string>
+    <string name="deashi">De Ashi Barai</string>
+    <string name="hiza">Hiza Guruma</string>
+    <string name="sasae">Sasae Tsurikomi Ashi</string>
+    <string name="uki">Uki Goshi</string>
+    <string name="osoto">O Soto Gari</string>
+    <string name="ogoshi">O Goshi</string>
+    <string name="ouchi">O Uchi Gari</string>
+    <string name="ippon">Ippon Seoi Nage</string>
+    <string name="m1">scarf pin</string>
+    <string name="m2">side four quarters pin</string>
+    <string name="m3">upper four quarters pin</string>
+    <string name="m4">vertical four quarters pin</string>
+    <string name="m5">rear scarf pin</string>
+    <string name="m6">single-shoulder pin</string>
+    <string name="m7">pillow scarf pin</string>
+    <string name="m8">triangular pin</string>
+    <string name="p_kyo">1st Kyo (Dai ikkyo)</string>
+    <string name="osaekomi">Osaekomi Waza</string>
+    <string name="kesa_gatame">Kesa Gatame</string>
+    <string name="yoko">Yoko Shiho Gatame</string>
+    <string name="kami">Kami Shiho Gatame</string>
+    <string name="tate">Tate Shiho Gatame</string>
+    <string name="ushiro">Ushiro Kesa Gatame</string>
+    <string name="kata">Kata Gatame</string>
+    <string name="makura">Makura Kesa Gatame</string>
+    <string name="sankaku">Sankaku Gatame</string>
+    <string name="A_gloss">Ashi: pie,pierna Ashi Ate : Ataque de pies/piernas Ayumi ashi: patrón ordinario de caminar</string>
+    <string name="b_gloss">Barai: barrida Bogyo : defensa Butsukari: repetir un ejercicio</string>
+    <string name="c_gloss">Chokuritsu shisei: posición erguida con las piernas y los talones juntos, los dedos de los pies separados en un ángulo de aproximadamente 30 Chowa: esquivar</string>
+    <string name="d_gloss">Dan: rango Do : la manera Dojo: escuela de entrenamiento Dori:apretón</string>
+    <string name="e_gloss">Eri:solapa,collaf</string>
+    <string name="f_gloss">Fusegi:escape</string>
+    <string name="g_gloss">Gaeshi:ver contraataque Gake:enganchar Garami:doblada Gari:cortar Gatame:luxacion</string>
+    <string name="h_gloss">Hairi:tipo de entrada Hanne:saltar Hara:estomago Hiki dashi:tirar Hidari:izquierda Hiza:rodilla</string>
+    <string name="i_gloss">Ippon:un punto completo Itsutsu:Cinco</string>
+    <string name="j_gloss">Jigo Hontai:postura defensiva Joseki:lugar de honor Ju:flexibilidad Judoka: practicante de judo Jutsu:tecnica</string>
+    <string name="k_gloss">Kaeshi_Contraataque Kakari:resistencia Kime:Decision Kobushi:golpe de puño kogeki:ofensiva Kyu:clases</string>
+    <string name="m_gloss">Mae:en frente de Makikomi:envase Makura:almohada Migi:right Mawari komi: desplazamiento rotacional</string>
+    <string name="n_gloss">Nage:lanzar Nami:natural Ne:acostado</string>
+    <string name="o_gloss">O:amplia Obi:cinturon Okuri:ambas Forward:adelante Otoshi:soltar</string>
+    <string name="r_gloss">Randori:ejercicio libre Rei:respeto Renshu:entrenamiento Ritsu rei:saludo de pie</string>
+    <string name="s_gloss">Sankaku:triangulo Sasae:bloquear Sensei:maestro Shintai:movimiento de cuerpo Sotai:pareja</string>
+    <string name="t_gloss">Tachi:suplente Tai:cuerpo Tanto:cuchillo Turikomi:levantamiento</string>
+    <string name="u_gloss">Uchi:interno Ukemi:desayuno Ura:reserva Ushiro:Back Utsuri:alrededor</string>
+    <string name="w_gloss">Wakare:separacion Waki:amplificar Waza:tecnica</string>
+    <string name="y_gloss">yakusoku:oportunidad Yavara:asignar Yoko en el lugar Yubi sake: Ataque con los dedos</string>
+    <string name="z_gloss">Za rei:arrodillado Zazen tai:posicion de rodillas</string>
+
+
+    <string-array name="shifts">
+        <item>morning</item>
+        <item>afternoon</item>
+        <item>night</item>
+    </string-array>
+    <string-array name="teachers">
+        <item>Masutasu Oyama</item>
+        <item>Yasuhiro Yamashita</item>
+        <item>Toshihiko Koga</item>
+        <item>Tadahiro Nomura</item>
+        <item>David Douillet</item>
+        <item>Teddy Rynner</item>
+        <item>Hidehiko Yoshida</item>
+        <item>Ilias Iliadis</item>
+        <item>Kosei Inoue</item>
+        <item>Shohei Ono</item>
+    </string-array>
+</resources>

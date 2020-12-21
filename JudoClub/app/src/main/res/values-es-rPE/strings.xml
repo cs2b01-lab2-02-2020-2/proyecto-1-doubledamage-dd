@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">JudoClub</string>
+    <string name="inscription">Inscripcion</string>
+    <string name="name">Nombre:</string>
+    <string name="last_name">Apellido:</string>
+    <string name="morning">mañana</string>
+    <string name="afternoon">tarde</string>
+    <string name="night">noche</string>
+    <string name="age">Edad:</string>
+    <string name="shift">Turno:</string>
+    <string name="teacher">Profesor:</string>
+    <string name="sign_up">Regístrate</string>
+    <string name="input_name">ingresa tu nombre</string>
+    <string name="input_last_name">ingresa tu apellido</string>
+    <string name="toast_error">Es obligatorio llenar todos los campos</string>
+    <string name="welcome_messaje">Bienvenid@</string>
+    <string name="register_summary">Resumen de inscripción</string>
+    <string name="return_to_main">Retorna a la página principal</string>
+    <string name="inscription_main">Inscríbete</string>
+    <string name="teacher_main">Profesores</string>
+    <string name="glosari_main">Glosario</string>
+    <string name="fundamental_tech_main">Técnicas Fundamentales</string>
+    <string name="go_kyo">Go-Kyo</string>
+    <string name="ne_waza">Ne-Waza</string>
+    <string name="m1">pasador de bufanda</string>
+    <string name="m2">pasador lateral cuatro cuartos</string>
+    <string name="m3">pasador de cuatro cuartos superiores</string>
+    <string name="m4">pasador vertical de cuatro cuartos</string>
+    <string name="m5">pasador de bufanda trasero</string>
+    <string name="m6">pasador de un solo hombro</string>
+    <string name="m7">pasador de bufanda almohada</string>
+    <string name="m8">pasador triangular</string>
+    <string name="deashi">De Ashi Barai</string>
+    <string name="hiza">Hiza Guruma</string>
+    <string name="sasae">Sasae Tsurikomi Ashi</string>
+    <string name="uki">Uki Goshi</string>
+    <string name="osoto">O Soto Gari</string>
+    <string name="ogoshi">O Goshi</string>
+    <string name="ouchi">O Uchi Gari</string>
+    <string name="ippon">Ippon Seoi Nage</string>
+    <string name="deashi_text">es la técnica más difícil de aprender porque requiere una coordinación precisa de piernas, brazos y cuerpo. Es la primera técnica porque siguiendo la filosofía japonesa, quien realmente quiere aprender judo tiene que entrenar continuamente sin darse por vencido. se clasifica como técnica ashi waza y el significado de su nombre es barrido avanzado del pie</string>
+    <string name="hiza_text">Técnica de Ashi Waza y su nombre significa rueda de rodilla</string>
+    <string name="sasae_text">Técnica Ashi Waza y su nombre significa apuntalar el pie en ángulo de elevación</string>
+    <string name="uki_text">Técnica de Koshi Waza y su nombre significa cadera flotante</string>
+    <string name="osoto_text">La técnica de Ashi Waza y su nombre significa Barrido exterior</string>
+    <string name="koshi_text">Técnica de Koshi Waza y su nombre significa cadera mayor</string>
+    <string name="ouchi_text">La técnica de Ashi Waza y su nombre significa barrido mayor interno</string>
+    <string name="ippon_text">La técnica de Te Waza y su nombre significa tiro hacia atrás simple</string>
+    <string name="p_kyo">1er Kyo (Dai ikkyo)</string>
+    <string name="osaekomi">Osaekomi Waza</string>
+    <string name="kesa_gatame">Kesa Gatame</string>
+    <string name="yoko">Yoko Shiho Gatame</string>
+    <string name="kami">Kami Shiho Gatame</string>
+    <string name="tate">Tate Shiho Gatame</string>
+    <string name="hora">Hora:</string>
+    <string name="ushiro">Ushiro Kesa Gatame</string>
+    <string name="kata">Kata Gatame</string>
+    <string name="makura">Makura Kesa Gatame</string>
+    <string name="sankaku">Sankaku Gatame</string>
+    <string name="meaning">Significado:</string>
+    <string name="A_gloss">Ashi: pie,pierna Ashi Ate : Ataque de pies/piernas Ayumi ashi: patrón ordinario de caminar</string>
+    <string name="b_gloss">Barai: barrida Bogyo : defensa Butsukari: repetir un ejercicio</string>
+    <string name="c_gloss">Chokuritsu shisei: posición erguida con las piernas y los talones juntos, los dedos de los pies separados en un ángulo de aproximadamente 30 Chowa: esquivar</string>
+    <string name="d_gloss">Dan: rango Do : la manera Dojo: escuela de entrenamiento Dori:apretón</string>
+    <string name="e_gloss">Eri:solapa,collaf</string>
+    <string name="f_gloss">Fusegi:escape</string>
+    <string name="g_gloss">Gaeshi:ver contraataque Gake:enganchar Garami:doblada Gari:cortar Gatame:luxacion</string>
+    <string name="h_gloss">Hairi:tipo de entrada Hanne:saltar Hara:estomago Hiki dashi:tirar Hidari:izquierda Hiza:rodilla</string>
+    <string name="i_gloss">Ippon:un punto completo Itsutsu:Cinco</string>
+    <string name="j_gloss">Jigo Hontai:postura defensiva Joseki:lugar de honor Ju:flexibilidad Judoka: practicante de judo Jutsu:tecnica</string>
+    <string name="k_gloss">Kaeshi_Contraataque Kakari:resistencia Kime:Decision Kobushi:golpe de puño kogeki:ofensiva Kyu:clases</string>
+    <string name="m_gloss">Mae:en frente de Makikomi:envase Makura:almohada Migi:right Mawari komi: desplazamiento rotacional</string>
+    <string name="n_gloss">Nage:lanzar Nami:natural Ne:acostado</string>
+    <string name="o_gloss">O:amplia Obi:cinturon Okuri:ambas Forward:adelante Otoshi:soltar</string>
+    <string name="r_gloss">Randori:ejercicio libre Rei:respeto Renshu:entrenamiento Ritsu rei:saludo de pie</string>
+    <string name="s_gloss">Sankaku:triangulo Sasae:bloquear Sensei:maestro Shintai:movimiento de cuerpo Sotai:pareja</string>
+    <string name="t_gloss">Tachi:suplente Tai:cuerpo Tanto:cuchillo Turikomi:levantamiento</string>
+    <string name="u_gloss">Uchi:interno Ukemi:desayuno Ura:reserva Ushiro:Back Utsuri:alrededor</string>
+    <string name="w_gloss">Wakare:separacion Waki:amplificar Waza:tecnica</string>
+    <string name="y_gloss">yakusoku:oportunidad Yavara:asignar Yoko en el lugar Yubi sake: Ataque con los dedos</string>
+    <string name="z_gloss">Za rei:arrodillado Zazen tai:posicion de rodillas</string>
+
+    <string-array name="shifts">
+        <item>mañana</item>
+        <item>tarde</item>
+        <item>noche</item>
+    </string-array>
+    <string-array name="teachers">
+        <item>Masutasu Oyama</item>
+        <item>Yasuhiro Yamashita</item>
+        <item>Toshihiko Koga</item>
+        <item>Tadahiro Nomura</item>
+        <item>David Douillet</item>
+        <item>Teddy Rynner</item>
+        <item>Hidehiko Yoshida</item>
+        <item>Ilias Iliadis</item>
+        <item>Kosei Inoue</item>
+        <item>Shohei Ono</item>
+    </string-array>
+</resources>

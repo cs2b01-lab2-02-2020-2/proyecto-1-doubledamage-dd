@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.utec.arincon.judoclub">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.JudoClub">
+        <activity
+            android:name=".NeWazaActivity"
+            android:label="@string/ne_waza"/>
+        <activity
+            android:name=".GoKyoActivity"
+            android:label="@string/go_kyo"/>
+        <activity
+            android:name=".InscriptionSumActivity"
+            android:label="@string/inscription_main" />
+        <activity
+            android:name=".TechniquesActivity"
+            android:label="@string/fundamental_tech_main" />
+        <activity
+            android:name=".GlosariActivity"
+            android:label="@string/glosari_main" />
+        <activity
+            android:name=".TeachersActivity"
+            android:label="@string/teacher_main" />
+        <activity
+            android:name=".InscriptionActivity"
+            android:label="@string/inscription_main" />
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>
