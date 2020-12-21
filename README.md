@@ -182,7 +182,7 @@ Tener el producto esperado para la completa satisfacción del usuario a la hora 
 ![Screenshot](tecnicas.png)
 ## Estilos:
    # Go-kyo:
-   ![Screenshot](Gokio.png)
+   ![Screenshot](gokio.png)
    # Ne-Waza
    ![Screenshot](newaza.png)
 ## Glosario
