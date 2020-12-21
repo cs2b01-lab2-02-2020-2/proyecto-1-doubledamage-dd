@@ -152,7 +152,7 @@ def downgrade():
 ![Screenshot](screenshot.png)
 
 
-##Android 
+## Android 
 
 
 La aplicación judo club te permite acceder al contenido tecnicas, glosario,incripción y maestros. 
