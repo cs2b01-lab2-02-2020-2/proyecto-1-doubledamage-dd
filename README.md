@@ -168,6 +168,8 @@ Tener el producto esperado para la completa satisfacción del usuario a la hora 
 
 ## JudoApp
 ![Screenshot](judoapp.png)
+## AndroidManifest
+![Screenshot](manifest.png)
 
 ## Activities
 ![Screenshot](activities.png)
