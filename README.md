@@ -154,6 +154,7 @@ def downgrade():
 
 ##Android 
 
+
 La aplicación judo club te permite acceder al contenido tecnicas, glosario,incripción y maestros. 
 
 ##Objetivo
@@ -164,5 +165,5 @@ Generar una app que permita al usuario realizar una decision en base a lo que le
 ##Vision
 Tener el producto esperado para la completa satisfacción del usuario a la hora de usar la app.
 ##ACtivities
-
+![Screenshot](activities.png)
 
