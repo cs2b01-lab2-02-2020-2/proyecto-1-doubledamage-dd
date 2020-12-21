@@ -151,3 +151,18 @@ def downgrade():
 ## App
 ![Screenshot](screenshot.png)
 
+
+##Android 
+
+La aplicación judo club te permite acceder al contenido tecnicas, glosario,incripción y maestros. 
+
+##Objetivo
+Brindar una aplicación con un sistema de registro que permita al usuario dar conocimiento basico de judo y que le permita generar una idea de cuales son los terminos básicos dentro del judo, las diferentes tecnicas y los maestros con los que cuenta la escuela de judo.
+
+##Misión
+Generar una app que permita al usuario realizar una decision en base a lo que le brinda la aplicación.
+##Vision
+Tener el producto esperado para la completa satisfacción del usuario a la hora de usar la app.
+##ACtivities
+
+
