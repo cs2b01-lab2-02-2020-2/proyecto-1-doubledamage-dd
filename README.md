@@ -171,8 +171,13 @@ Tener el producto esperado para la completa satisfacción del usuario a la hora 
 ## AndroidManifest
 ![Screenshot](manifest.png)
 
+
 ## Activities
+   ### java
 ![Screenshot](activities.png)
+   ### xml
+   ![Screenshot](xml.png)
+   
 
 ### Activities principales:
 
