@@ -168,6 +168,16 @@ Tener el producto esperado para la completa satisfacción del usuario a la hora 
 
 ## Activities
 ![Screenshot](activities.png)
-### Formulario de registro
+## Registro
 ![Screenshot](registro.png)
+## Profesores
 
+### Tecnicas Fundamentales
+![Screenshot](tecnicas.png)
+## Estilos:
+   # Go-kyo:
+   ![Screenshot](Gokio.png)
+   # Ne-Waza
+   ![Screenshot](newaza.png)
+## Glosario
+![Screenshot](glosario.png)
