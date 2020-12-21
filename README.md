@@ -166,14 +166,23 @@ Generar una app que permita al usuario realizar una decision en base a lo que le
 ## Vision
 Tener el producto esperado para la completa satisfacción del usuario a la hora de usar la app.
 
+## JudoApp
+![Screenshot](judoapp.png)
+
 ## Activities
 ![Screenshot](activities.png)
+
+### Activities principales:
+
 ## InscripcionActivitie
 ![Screenshot](inscripcionActivitie.png)
+
 ## Main Activitie
 ![Screenshot](mainActivitie.png)
-##InscriptionSumActivitie
+
+## InscriptionSumActivitie
 ![Screenshot](sumActivitie.png)
+
 ## Registro
 ![Screenshot](registro.png)
 ## Profesores
@@ -187,3 +196,4 @@ Tener el producto esperado para la completa satisfacción del usuario a la hora 
    ![Screenshot](newaza.png)
 ## Glosario
 ![Screenshot](glosario.png)
+
