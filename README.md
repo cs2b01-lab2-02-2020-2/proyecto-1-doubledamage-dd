@@ -168,6 +168,10 @@ Tener el producto esperado para la completa satisfacción del usuario a la hora 
 
 ## Activities
 ![Screenshot](activities.png)
+## InscripcionActivitie
+![Screenshot](inscripcionActivitie.png)
+## Main Activitie
+![Screenshot](mainActivitie.png)
 ## Registro
 ![Screenshot](registro.png)
 ## Profesores
