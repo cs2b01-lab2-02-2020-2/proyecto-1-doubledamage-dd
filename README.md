@@ -1,4 +1,4 @@
-<<<<<<< HEAD
+
 # Proyecto DBP 2020-2 #
 ### Integrantes:
 -Marcelo Juan Surco Salas.
@@ -29,8 +29,6 @@ Nuestro proyecto cuenta con un modulo de registro y login atravez de back y fron
 
 
 ## Objetivos principales / Misión / Visión :
-
-=======
 <a name="Desc"></a>
 ## Descripción del proyecto:
 Nuestro proyecto cuenta con un modulo de registro y login a través de back y front end, el cual permitirá la inscripción a un taller de Judo de forma virtual, para tener un manejo más organizado de los datos dentro de una base de datos en postgres.
