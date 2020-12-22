@@ -37,7 +37,6 @@ Nuestro proyecto cuenta con un modulo de registro y login a través de back y fr
 
 <a name="opmv"></a>
 ## Objetivos principales / Misión / Visión :
->>>>>>> 93cef86548238978bb71e9a4c65e35e4b9fb80d4
 ### Objetivos:
 El objetivo de este proyecto es crear un sistema que nos permitar hacer registros y logeos basandonos en el modelo cliente servidor. 
 ### Misión:
