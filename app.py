@@ -91,7 +91,7 @@ def logeo_usuario():
 @app.route('/')
 def index():
     usuario = Usuario.query.all()
-    return render_template('index.html', data=usuario)
+    return render_template('indexa.html', data=usuario)
 
 
 @app.errorhandler(404)
