@@ -57,8 +57,10 @@ Hemos utilizado una base de datos relacional, en este caso postgresql, además d
 Utilizamos flask como framework, este nos permite realizar metodos importantes en la app, además de utilizar SQLAlchemy como ORM para poder convertir las tablas Clases python y así mismo crear modelos.
 ## Referencias API
 Flask-SQLAlchemy
+
 ### Front-end
 En el Front-end hemos utilizado HTML, CSS, Fetch, JavaScript.
+
 ### Base de datos
 Hemos utilizado una base de datos relacional, en este caso postgresql.
 
