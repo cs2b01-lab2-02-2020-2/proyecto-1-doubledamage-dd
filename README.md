@@ -230,5 +230,8 @@ Tener el producto esperado para la completa satisfacción del usuario a la hora 
    ![Screenshot](newaza.png)
 ## Glosario
 ![Screenshot](glosario.png)
+## Manejo Errores
+![Screenshot](manejoerror.png)
 
->>>>>>> 93cef86548238978bb71e9a4c65e35e4b9fb80d4
+
+
