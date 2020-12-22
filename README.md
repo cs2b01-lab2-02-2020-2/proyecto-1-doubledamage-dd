@@ -5,7 +5,7 @@
 -Harold Alexis Canto Vidal
 -Jean Pier Ángeles.
 -Alberto Domenic Rincon Espinoza.
-=======
+
 # JudoClub #
 #### Integrantes:
 1. Marcelo Juan Surco Salas.
